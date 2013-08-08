@@ -1,0 +1,222 @@
+@import "bootstrap-sass/lib/bootstrap";
+@import "bootstrap-sass/lib/responsive";
+
+/* Put your CSS here */
+@font-face {
+    font-family: 'Lindsay Becker';
+    src: url('fonts/lindsay-becker.eot');
+    src: local('☺'), url('fonts/lindsay-becker.woff') format('woff'), url('fonts/lindsay-becker.ttf') format('truetype'), url('fonts/lindsay-becker.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.carcassonne { 
+    font-family: "Lindsay Becker";
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #563d7c;
+}
+
+#intro{
+    color: #FFF;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.home{
+    width: 32px;
+  }
+
+.hero-unit {
+    margin: auto;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    text-align: center;
+
+    padding: 0px;
+}
+
+.backlink{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.help-inline {
+    font-size: 1.3em;
+}
+
+#playersCount{
+    text-align: center;
+}
+
+
+.jumbotron {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  color: rgba(255,255,255,.75);
+  text-align: center;
+  border-radius: 0;
+}
+.container {
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.jumbotron .btn{
+    background-image: none !important;
+    text-shadow: none;
+}
+.jumbotron h1,
+.jumbotron .glyphicon-ok {
+  margin-bottom: 15px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.jumbotron .glyphicon-ok {
+  font-size: 40px;
+  line-height: 1;
+}
+.btn-outline {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 18px 24px;
+  font-size: inherit;
+  font-weight: 500;
+  color: #fff; /* redeclare to override the `.jumbotron a` */
+  background-color: transparent;
+  border-color: #fff;
+  border-color: rgba(255,255,255,.5);
+  transition: all .1s ease-in-out;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  color: #563d7c;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.jumbotron p a,
+.jumbotron-links a {
+  font-weight: 500;
+  color: #fff;
+  transition: all .1s ease-in-out;
+}
+.jumbotron p a:hover,
+.jumbotron-links a:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,.55);
+}
+
+/* Textual links */
+.jumbotron-links {
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.jumbotron-links li {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 21px;
+  }
+  .jumbotron h1,
+  .jumbotron .glyphicon-ok {
+    font-size: 50px;
+  }
+
+  .jumbotron-links li + li {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo{
+    width: 48px;
+  }
+
+  .jumbotron-links li{
+    display: block;
+  }
+
+  .jumbotron h1,
+  .jumbotron .glyphicon-ok {
+    font-size: 26px;
+  }
+
+  .jumbotron {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  .container{
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .meeples{
+    width: 24px;
+    position: relative;
+    top: -5px;
+  }
+
+  .help-inline{
+    font-size: 0.8em;
+    position: relative;
+    top: -5px;
+  }
+
+  li{
+    margin-bottom: 0px;
+  }
+
+  .hero-unit{
+    font-size: 20px;
+  }
+}
+
+button{
+    margin-bottom: 5px !important;   
+}
+
+.landscape{
+    float: left;
+    width: 49%;
+}
+
+.clear{
+    clear: both;
+}

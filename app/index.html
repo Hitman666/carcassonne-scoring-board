@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Nikola Brežnjak's Carcassonne Scoring Board</title>
+    <meta name="description" content="Nikola Brežnjak's Carcassonne Scoring Board">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-iphone4.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-iphone4.png" />
+
+
+        <!-- build:css({.tmp,app}) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+</head>
+  <body id="intro" ng-app="carcassonneScoringBoardWelcome" ng-controller="MyController">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="jumbotron">
+        <div class="container">
+            <img class="logo" src="images/logo.png">
+            <span class="glyphicon glyphicon-ok"></span>
+            <h1 class="carcassonne">Carcassonne scoring board</h1>
+            <p>Electronic scoring board gone to the Web</p><br/>
+
+            <a href="carcassonne-scoring-board.html" class="btn btn-outline btn-large" onclick="_gaq.push(['_trackEvent', 'CSB', 'Start']);">Start counting!</a><br/>
+            
+            <ul class="jumbotron-links">
+                <li>
+                    <a href="http://github.com/twbs/bootstrap-examples" onclick="_gaq.push(['_trackEvent', 'CSB', 'GitHub']);">Fork me on GitHub</a>
+                </li>
+                <li>
+                    <a href="#electronic" onclick="_gaq.push(['_trackEvent', 'CSB', '']);" ng-click="showElectronic()">Electronic carcassonne scoring board</a>
+                </li>
+                <li>
+                    <a href="#how" onclick="_gaq.push(['_trackEvent', 'CSB', '']);" ng-click="showHow()">How did I do it?</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="electronic" class="container" ng-show="_showElectronic">
+        <hr/>
+        Since I'm a big fan of <a href="http://boardgamegeek.com/boardgame/822/carcassonne" onclick="_gaq.push(['_trackEvent', 'CSB', 'carcLink']);">Carcassonne board game</a> and I happen to came accross this <a href="http://www.av-technologies.net/scoreboard/index.html">unique project</a> on the web, I just <strong>had to</strong> make one for myself :). This was 6 years ago (2007), and since then this electronic counter prooved not only great for Carcassonne scoring, but we also use it to track score in <a href="http://boardgamegeek.com/boardgame/25669/qwirkle" onclick="_gaq.push(['_trackEvent', 'CSB', 'qwirkleLink']);">Qwirkle</a>.<br/>
+
+        The idea for a web app came naturally since the electronic counter was too cumbersome to carry around. So, why not make an app which would easily work on any smartphone? Boom - a day later the basic functional app was there.<br/>
+
+        Now, since this was done in a really short period of time, not a lot effort has been given to tuning it up, that's why I encourage you to give suggestions or even help out on github.
+    </div>
+
+    <div id="#how" class="container" ng-show="_how">
+        <hr/>
+        You can read about the dev process on <a href="http://www.nikola-breznjak.com/blog/projects/how-i-made-carcassonne-scoring-board" onclick="_gaq.push(['_trackEvent', 'CSB', 'blogLink']);">my blog</a>. In short, I was using Yeoman with Angular generator and it's my first ventuare down the Angular lane. You can fork the code <a href="">on Github</a> and help me add new features and make it look better on more viewports.
+    </div>
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    
+    <script src="scripts/my-jq-fidlings.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-33874311-3'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</body>
+</html>

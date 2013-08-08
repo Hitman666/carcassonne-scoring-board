@@ -1,0 +1,62 @@
+<div class="hero-unit">
+	<p class="carcassonne">
+		<a href="index.html">
+			<img class="home" src="images/home.png" alt="">
+		</a>
+		Carcassonne scoring board
+	</p>
+
+    <form style="text-align: center;">
+        <fieldset>
+            <div id="gamePrepare" ng-show="initializeGame">
+	            <label>How many players?</label>
+	            <input type="text" name="playersCount" id="playersCount" ng-model="playersCount" class="input-mini" placeholder="#plyrs?"><br/>
+				<br>
+
+				<ul>
+					<li ng-repeat="i in getTimes()">
+						<input type="text" class="input-medium" placeholder="Player {{i}}" id="player_{{i}}" ng-model="players[i-1]">
+					</li>
+				</ul>
+
+				<button class="btn btn-primary btn-large marginb10" ng-click="startGame()" ng-show="playersCount > 0">Let's start </button>
+			</div>
+			
+            <div id="scoringButtons" ng-show="gameStarted">
+				<ul>
+					<li ng-repeat="i in getTimes()" class="landscape">
+						<img class="meeples" src="images/{{i-1}}.png" />
+						<button class="players btn btn-large" ng-click="setSelectedUser(i-1)" ng-class="{'btn-primary':isSelected(i-1)}">{{players[i-1]}}</button>
+						<span class="help-inline">{{points[i-1]}}</span>
+						<br/>
+					</li>
+				</ul>
+				<div class="clear"></div>
+				
+				<button class="btn btn-primary btn-large" ng-click="addPoints(1)">+1</button>
+				<button class="btn btn-primary btn-large" ng-click="addPoints(2)">+2</button>
+				<button class="btn btn-primary btn-large" ng-click="addPoints(5)">+5</button>
+				<button class="btn btn-primary btn-large" ng-click="addPoints(10)">+10</button>
+				<button class="btn btn-primary btn-large" ng-click="addPoints(-1)">-1</button>
+
+				<br/><br/>
+				<button class="btn btn-danger btn-large" ng-click="endGame()" ng-show="playersCount > 0">End game</button>
+			</div>
+
+			<div id="scoringButtons" ng-show="showResults">
+				<ul>
+					<li ng-repeat="user in useri">
+						{{user.name}}: <b>{{user.points}}</b>
+					</li>
+				</ul>
+				<br/>
+				<br/>
+				
+				<button class="btn btn-success btn-large" ng-click="newGame()">New game</button>
+				<button class="btn btn-primary btn-large" ng-click="restartGame()">Play again</button>
+			</div>
+        </fieldset>
+    </form>
+
+
+</div>
