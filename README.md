@@ -24,7 +24,7 @@ Since I'm a big fan of [Carcassonne board game](http://boardgamegeek.com/boardg
 
 Here are some ([more on my blog](http://www.nikola-breznjak.com/blog/projects/carcassonne-scoring-board-application)) pictures of how my version of the electronic carcassonne counter looks like, and how the app looks like on iphone  
 ![alt text](app/images/myElectronicCarcassonneScoringBoard.jpg "My electronic Carcassonne scoring board")  
-![alt text](app/images/iPhoneLooks.png "My Carcassonne scoring board application on iPhone")
+![alt text](app/images/iphoneLooks.png "My Carcassonne scoring board application on iPhone")
 
 Idea?
 =====
