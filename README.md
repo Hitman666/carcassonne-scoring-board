@@ -26,10 +26,10 @@ Here are some ([more on my blog](http://www.nikola-breznjak.com/blog/projects/ca
 ![alt text](app/images/myElectronicCarcassonneScoringBoard_250.jpg "My electronic Carcassonne scoring board")  
 ![alt text](app/images/iphoneLooks_250.png "My Carcassonne scoring board application on iPhone")
 
-Idea?
-=====
+Conclusion?
+===========
 
-The idea for a web app came naturally since the electronic counter was too cumbersome to carry around. Now, since this project was done while I was learning (still am) [Angular.js](http://angularjs.org/), there is still a lot space for improvement (especially code structure and logic), that's why I encourage you to give suggestions on best (better) Angular practices, or even help out. Until then try out the application and give me your thoughts about it. Btw, the code here is free to use, I didn't put any restrictions on it so feel free to fork it, improve it, alter it to suit your needs.
+Since this project was done while I was learning (still am) [Angular.js](http://angularjs.org/), there is still a lot space for improvement (especially code structure and logic), that's why I encourage you to give suggestions on best (better) Angular practices, or even help out. Until then try out the application and give me your thoughts about it. Btw, the code here is free to use, I didn't put any restrictions on it so feel free to fork it, improve it, alter it to suit your needs.
 
 In case you're wondering the icons are from [The IconFactory](http://iconfactory.com/freeware/preview/cmap), and the font is [Lindsay Becker](href="http://www.ufonts.com/fonts/lindsay-becker.html).
 
