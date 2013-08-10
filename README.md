@@ -1,7 +1,7 @@
 Carcassonne Scoring Board
 =========================
+Web app port of an electronic carcassonne scoring board  
 ![alt text](app/images/webapp.PNG "Carcassonne scoring board application screenshot")
-Web app port of an electronic carcassonne scoring board
 
 How to use the code?
 ====================
@@ -11,8 +11,11 @@ First you have to clone it, then run **npm install** and **bower install** in th
     cd carcassonne-scoring-board
     npm install
     bower install
-To test my application run  
+
+To test my application run
+
     grunt server
+
 and you should see the application open in your browser.
 
 Why?
