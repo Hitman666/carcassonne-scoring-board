@@ -5,7 +5,7 @@ Web app port of an electronic carcassonne scoring board
 
 How to use the code?
 ====================
-First you have to clone it, then run **npm install** and **bower install** in the cloned folder for all the dependencies to install themselves:
+I made this app using [Yeoman](http://yeoman.io/) with [angular generator](https://github.com/yeoman/generator-angular), so first you have to clone it, then run **npm install** and **bower install** in the cloned folder for all the dependencies to install themselves:
 
     git clone https://github.com/Hitman666/carcassonne-scoring-board.git
     cd carcassonne-scoring-board
