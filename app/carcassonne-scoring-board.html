@@ -18,6 +18,7 @@
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+    <script type='application/javascript' src='bower_components/fastclick/lib/fastclick.js'></script>
 </head>
   <body ng-app="carcassonneScoringBoardApp">
     <!--[if lt IE 7]>
@@ -40,6 +41,12 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+      window.addEventListener('load', function() {
+        FastClick.attach(document.body);
+      }, false);
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
